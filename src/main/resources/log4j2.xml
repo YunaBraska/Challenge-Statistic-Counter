@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}} %clr{%5p} %clr{---} %clr{[%15.15t]} %clr{%-40.40c{1.}} %clr{:} %m%n%wEx"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.springfrosch" level="trace"/>
+        <Root level="error">
+            <AppenderRef ref="stdout" />
+        </Root>
+    </Loggers>
+
+</Configuration>

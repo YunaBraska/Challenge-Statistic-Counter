@@ -1,0 +1,7 @@
+spring:
+  test:
+    mockmvc:
+      print: none
+management:
+  security:
+    enabled: false
